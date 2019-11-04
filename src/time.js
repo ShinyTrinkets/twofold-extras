@@ -11,10 +11,10 @@ function moonPhase(_, { date = null, d = null, emoji = true } = {}) {
     const moonmoji = require('moonmoji')
     date = getDate(date || d)
     const m = moonmoji(date)
-    if (emoji) {
-        return m.emoji
-    } else {
+    if (emoji === 'false' || emoji === 'no') {
         return m.name
+    } else {
+        return m.emoji
     }
 }
 
