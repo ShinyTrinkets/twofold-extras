@@ -12,7 +12,8 @@
   "contributors": [],
   "dependencies": {
     "esprima": "4.0.x",
-    "node-fetch": "2.6.x"
+    "moonmoji": "1.x",
+    "r2": "2.x"
   },
   "description": "TwoFold extra tags",
   "devDependencies": {
@@ -26,9 +27,10 @@
   },
   "homepage": "https://github.com/ShinyTrinkets/twofold-extras",
   "keywords": [
-    "app",
-    "cli",
-    "template"
+    "twofold",
+    "template",
+    "helpers",
+    "functions"
   ],
   "license": "MIT",
   "name": "twofold-extras",
