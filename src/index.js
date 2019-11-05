@@ -1,4 +1,5 @@
-const time = require('./time')
 const code = require('./code')
+const request = require('./request')
+const time = require('./time')
 
-module.exports = Object.assign({}, time, code)
+module.exports = Object.assign({}, code, request, time)
