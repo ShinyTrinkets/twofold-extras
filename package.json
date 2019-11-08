@@ -11,16 +11,19 @@
   },
   "contributors": [],
   "dependencies": {
-    "esprima": "4.0.x",
+    "esprima": "4.x",
+    "execa": "3.x",
     "moonmoji": "1.x",
-    "r2": "2.x"
+    "r2": "2.x",
+    "shell-quote": "1.x"
   },
   "description": "TwoFold extra tags",
   "devDependencies": {
     "ava": "2.x",
     "codecov": "3.6.x",
     "nyc": "14.x",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "xo": "0.25.x"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -41,9 +44,6 @@
   },
   "prettier": {
     "printWidth": 120,
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 4,
     "trailingComma": "es5"
   },
   "repository": {
@@ -53,7 +53,12 @@
   "scripts": {
     "coverage": "npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov",
     "fmt": "npx prettier --write ./src/{*,*/}*.js",
-    "test": "npx nyc ava test/*.test.js"
+    "test": "xo && npx nyc ava test/*.test.js"
   },
-  "version": "0.1.0"
+  "version": "0.0.1",
+  "xo": {
+    "prettier": true,
+    "semicolon": false,
+    "space": 4
+  }
 }

@@ -1,24 +1,27 @@
 function getDate(text) {
     if (text && typeof text === 'string') {
         return new Date(text)
-    } else if (!text || typeof text !== 'object') {
+    }
+
+    if (!text || typeof text !== 'object') {
         return new Date()
     }
+
     return text
 }
 
-function moonPhase(_, { date = null, d = null, emoji = true } = {}) {
+function moonPhase(_, {date = null, d = null, emoji = true} = {}) {
     const moonmoji = require('moonmoji')
     date = getDate(date || d)
     const m = moonmoji(date)
     if (emoji === 'false' || emoji === 'no') {
         return m.name
-    } else {
-        return m.emoji
     }
+
+    return m.emoji
 }
 
-function zodiacSign(_, { date = null, d = null } = {}) {
+function zodiacSign(_, {date = null, d = null} = {}) {
     const zodSigns = [
         'Capricorn',
         'Aquarius',
@@ -99,6 +102,7 @@ function zodiacSign(_, { date = null, d = null } = {}) {
             else sign = zodSigns[0]
             break
     }
+
     return sign
 }
 
