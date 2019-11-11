@@ -52,8 +52,8 @@
   },
   "scripts": {
     "coverage": "npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov",
-    "fmt": "npx prettier --write ./src/{*,*/}*.js",
-    "test": "xo && npx nyc ava test/*.test.js"
+    "fmt": "npx xo --fix src/",
+    "test": "npx xo && npx nyc ava test/*.test.js"
   },
   "version": "0.0.1",
   "xo": {
