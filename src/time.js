@@ -11,6 +11,9 @@ function getDate(text) {
 }
 
 function moonPhase(_, {date = null, d = null, emoji = true} = {}) {
+    /**
+     * Return the moon phase for current date, or for a specified date.
+     */
     const moonmoji = require('moonmoji')
     date = getDate(date || d)
     const m = moonmoji(date)
@@ -22,6 +25,9 @@ function moonPhase(_, {date = null, d = null, emoji = true} = {}) {
 }
 
 function zodiacSign(_, {date = null, d = null} = {}) {
+    /**
+     * Return the zodiac sign for current date, or for a specified date.
+     */
     const zodSigns = [
         'Capricorn',
         'Aquarius',

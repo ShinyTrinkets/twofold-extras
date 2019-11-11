@@ -2,8 +2,9 @@ const execa = require('execa')
 const {parse} = require('shell-quote')
 
 async function cmd(_, {cmd, args = [], trim = false}, {double = false}) {
-    // Shell?
-    // timeout?
+    /**
+     * Execute a system command and return the output.
+     */
     if (typeof args === 'string') {
         args = parse(args)
     }
@@ -12,6 +13,8 @@ async function cmd(_, {cmd, args = [], trim = false}, {double = false}) {
         ;[cmd, ...args] = parse(cmd)
     }
 
+    // Shell?
+    // Timeout?
     const {stdout} = await execa(cmd, args)
     if (trim) {
         return stdout.trim()
