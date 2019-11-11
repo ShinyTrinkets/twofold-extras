@@ -55,7 +55,7 @@
     "fmt": "npx xo --fix src/",
     "test": "npx xo && npx nyc ava test/*.test.js"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "xo": {
     "prettier": true,
     "semicolon": false,
