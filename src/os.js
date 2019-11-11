@@ -1,7 +1,7 @@
 const execa = require('execa')
 const {parse} = require('shell-quote')
 
-async function cmd(_, {cmd, args = [], trim = false}) {
+async function cmd(_, {cmd, args = [], trim = false}, {double = false}) {
     // Shell?
     // timeout?
     if (typeof args === 'string') {
@@ -15,6 +15,10 @@ async function cmd(_, {cmd, args = [], trim = false}) {
     const {stdout} = await execa(cmd, args)
     if (trim) {
         return stdout.trim()
+    }
+
+    if (double) {
+        return `\n${stdout.trim()}\n`
     }
 
     return stdout
