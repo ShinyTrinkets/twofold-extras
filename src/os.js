@@ -1,7 +1,7 @@
 const execa = require('execa')
 const {parse} = require('shell-quote')
 
-async function cmd(_, {cmd, args = [], trim = false}, {double = false}) {
+async function cmd(_, {cmd, args = [], trim = false} = {}, {double = false} = {}) {
     /**
      * Execute a system command and return the output.
      */
