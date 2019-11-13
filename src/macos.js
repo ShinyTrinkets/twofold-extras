@@ -21,7 +21,7 @@ async function setVolume({text}, {nr} = {}) {
     return nr
 }
 
-async function setBrightness ({text}, {nr} = {}) {
+async function setBrightness({text}, {nr} = {}) {
     /**
      * Set brightness from 0 to 10.
      */
