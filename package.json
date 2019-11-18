@@ -11,18 +11,22 @@
   },
   "contributors": [],
   "dependencies": {
+    "dot-prop": "5.x",
     "esprima": "4.x",
     "execa": "3.x",
+    "load-json-file": "^6.2.0",
     "moonmoji": "1.x",
     "osx-brightness": "4.x",
     "r2": "2.x",
-    "shell-quote": "1.x"
+    "shell-quote": "1.x",
+    "url-slug": "2.x",
+    "write-json-file": "^4.2.1"
   },
   "description": "TwoFold extra tags",
   "devDependencies": {
     "ava": "2.x",
     "codecov": "3.6.x",
-    "nyc": "14.x",
+    "nyc": "14.1.1",
     "prettier": "1.x",
     "xo": "0.25.x"
   },
