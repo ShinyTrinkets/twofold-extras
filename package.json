@@ -1,69 +1,42 @@
 {
-  "authors": [
-    "Cristi Constantin <cristi.constantin@speedpost.net>"
-  ],
-  "ava": {
-    "failFast": true,
-    "verbose": true
-  },
-  "bugs": {
-    "url": "https://github.com/ShinyTrinkets/twofold-extras/issues"
-  },
-  "contributors": [],
-  "dependencies": {
-    "dot-prop": "5.x",
-    "esprima": "4.x",
-    "execa": "3.x",
-    "load-json-file": "^6.2.0",
-    "moonmoji": "1.x",
-    "osx-brightness": "4.x",
-    "r2": "2.x",
-    "shell-quote": "1.x",
-    "url-slug": "2.x",
-    "write-json-file": "^4.2.1"
-  },
+  "name": "twofold-extras",
   "description": "TwoFold extra tags",
-  "devDependencies": {
-    "ava": "2.x",
-    "codecov": "3.6.x",
-    "nyc": "14.1.1",
-    "prettier": "1.x",
-    "xo": "0.25.x"
-  },
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "homepage": "https://github.com/ShinyTrinkets/twofold-extras",
   "keywords": [
     "twofold",
     "template",
     "helpers",
     "functions"
   ],
+  "version": "0.1.0",
   "license": "MIT",
-  "name": "twofold-extras",
-  "nyc": {
-    "exclude": [
-      "src/cli.js"
-    ]
-  },
-  "prettier": {
-    "printWidth": 120,
-    "trailingComma": "es5"
-  },
+  "private": true,
+  "authors": [
+    "Cristi Constantin (https://crlf.link/)"
+  ],
+  "contributors": [],
+  "homepage": "https://github.com/ShinyTrinkets/twofold-extras",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ShinyTrinkets/twofold-extras.git"
   },
-  "scripts": {
-    "coverage": "npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov",
-    "fmt": "npx xo --fix src/",
-    "test": "npx xo && npx nyc ava test/*.test.js"
+  "bugs": {
+    "url": "https://github.com/ShinyTrinkets/twofold-extras/issues"
   },
-  "version": "0.0.2",
-  "xo": {
-    "prettier": true,
-    "semicolon": false,
-    "space": 4
+  "scripts": {
+    "fmt": "bunx prettier --write packages/",
+    "lint": "tsc -noEmit -allowImportingTsExtensions -esModuleInterop packages/"
+  },
+  "workspaces": ["./packages/*"],
+  "devDependencies": {
+    "@types/node": "20.x",
+    "bun-types": "0.x",
+    "prettier": "2.x",
+    "typescript": "5.x"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
   }
 }

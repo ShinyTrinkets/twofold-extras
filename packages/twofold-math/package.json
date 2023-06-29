@@ -1,0 +1,14 @@
+{
+  "name": "@twofold-extras/twofold-math",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "mathjs": "11.x"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "5.x"
+  }
+}

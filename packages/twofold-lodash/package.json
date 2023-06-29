@@ -1,0 +1,15 @@
+{
+  "name": "@twofold-extras/twofold-lodash",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "lodash": "4.x"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.x",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "5.x"
+  }
+}

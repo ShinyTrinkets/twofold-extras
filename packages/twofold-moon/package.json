@@ -1,0 +1,14 @@
+{
+  "name": "@twofold-extras/twofold-moon",
+  "module": "index.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "5.x"
+  },
+  "type": "module",
+  "dependencies": {
+    "moonmoji": "1.x"
+  }
+}
