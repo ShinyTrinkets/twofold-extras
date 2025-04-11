@@ -2,7 +2,7 @@
 
 [![Project name][project-img]][project-url]
 
-> Big and small extra tags for [TwoFold.js](https://github.com/ShinyTrinkets/twofold.js) (2✂︎f)
+Big and small extra tags for [TwoFold.ts](https://github.com/ShinyTrinkets/twofold.ts) (2✂︎f)
 
 ---
 
