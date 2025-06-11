@@ -6,7 +6,9 @@
     "culori": "4.x"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/bun": "latest",
+    "@types/deno": "latest",
+    "@types/node": "latest"
   },
   "peerDependencies": {
     "typescript": "5.x"

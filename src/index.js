@@ -1,7 +1,4 @@
-const code = require('./code')
-const os = require('./os')
-const macos = require('./macos')
-const request = require('./request')
-const time = require('./time')
+const code = require('./code');
+const macos = require('./macos');
 
-module.exports = {...code, ...fs, ...os, ...macos, ...request, ...time}
+module.exports = { ...code, ...macos };

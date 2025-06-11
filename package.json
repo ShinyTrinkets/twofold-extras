@@ -1,7 +1,8 @@
 {
   "name": "twofold-extras",
-  "description": "TwoFold extra tags",
+  "description": "TwoFold (2✂︎f) extra tags",
   "keywords": [
+    "✂",
     "twofold",
     "template",
     "helpers",
@@ -28,9 +29,10 @@
   },
   "workspaces": ["./packages/*"],
   "devDependencies": {
-    "@types/node": "20.x",
-    "bun-types": "0.x",
-    "prettier": "2.x",
+    "@types/bun": "latest",
+    "@types/deno": "latest",
+    "@types/node": "latest",
+    "prettier": "3.x",
     "typescript": "5.x"
   },
   "prettier": {
